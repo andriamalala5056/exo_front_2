@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.wrapper {
+    margin: 20px;
+    color: #676d79;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header p {
+    text-align: center;
+    font-size: 23px;
+    line-height: 1.7em;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: #e7746f;
+    font-size: 25px;
+    color: #fff;
+    padding: 12px 18px 12px 18px;
+    border: 0;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+li {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+i.fa {
+    border: 1px solid #cacaca;
+    font-size: 22px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+li p {
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* Custom, iPhone Retina */ 
+@media screen and (max-width : 991px) {
+    li.separator {
+        display: none;
+    }
+}
+ 
+/* Extra Small Devices, Phones */ 
+@media screen and (min-width : 480px) {
+ 
+}
+ 
+/* Small Devices, Tablets */
+@media screen and (min-width : 768px) {
+    i.fa {
+        margin-right: 0;
+    }
+
+    li {
+        display: inline-block;
+        width: calc(25% - 20px);
+        vertical-align: top;
+        text-align: center;
+    }
+
+    li p {
+        display: block;
+    }
+
+    ul {
+        max-width: none;
+        text-align: center;
+    }
+}
+ 
+/* Medium Devices, Desktops */
+@media screen and (min-width : 992px) {
+    li {
+        width: calc(25% - 74px);
+    }
+
+    li.separator:first-of-type {
+        display: none;
+    }
+
+    li.separator {
+        width: 25px;
+        margin-top: 55px;
+    }
+
+    li.separator img {
+        width: 25px;
+    }
+
+    i.fa {
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+
+}
+ 
+/* Large Devices, Wide Screens */
+@media screen and (min-width : 1200px) {
+ 
+}
