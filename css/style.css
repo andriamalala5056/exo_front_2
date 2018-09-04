@@ -106,7 +106,7 @@ li p {
 /* Medium Devices, Desktops */
 @media screen and (min-width : 992px) {
     li {
-        width: calc(25% - 74px);
+        width: calc(24% - 74px);
     }
 
     li.separator:first-of-type {
@@ -127,6 +127,11 @@ li p {
         width: 100px;
         height: 100px;
         border-radius: 100px;
+    }
+
+    li p {
+        font-size: 18.8px;
+        line-height: 26px;
     }
 
 }
